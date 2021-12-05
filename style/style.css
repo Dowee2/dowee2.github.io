@@ -196,7 +196,7 @@ nav a:hover{
   text-decoration-line: underline;  
 }
 
-main h2, dt, main a {
+main h2, dt,{
 	color: #271413;	  
   text-decoration: none;
 }
