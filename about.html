@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Strait' rel='stylesheet'>
     <link href="style/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
 </head>
 
 <body>
@@ -18,21 +19,9 @@
                 <a href="https://www.linkedin.com/in/anton-maynard-24a246127/" target="blank"><img width="30" height="30" src="images/logos/LinkedIn.png"></a>
             </div>
         </section>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="dropdown">Accomplishments
-                    <div class="dropdown-content">
-                        <a href="PTW.html">Professional And Technical Writing</a>
-                        <a href="CS.html">Computer Science</a>
-                        <a href="#">Link 3</a></div>
-                </li>
-            </ul>
-        </nav>
+        <navcomponent></navcomponent>
         <header>
-            <h1>About Me</h1>
+            <h1>Personal Time</h1>
         </header>
         <main>
             <h2>Gaming</h2>
@@ -40,10 +29,15 @@
             <p>Out of all the things I enjoy doing video gaming has to be my all time passion. Although 9/10 of the games I play stress me out, it serves as my main form decompress and cooping after a stressful day. Ontop of this, it often grants me a great
                 opportunity to meet new people, as well as hang out with the friends I've made over the years. Some of my favourite games I've play include: Black Desert Online, Dark Souls, Sid Meier's Civilization, Smite, and Doom Eternal</p>
         </main>
-        <footer>
-            <p>Copyright &copy; 2021 Anton Maynard</p>
-        </footer>
+        <footerComponent></footerComponent>
     </section>
+
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/components/footerComponent.js"></script>
+    <script src="scripts/components/navComponent.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
 </body>
 
 </html>

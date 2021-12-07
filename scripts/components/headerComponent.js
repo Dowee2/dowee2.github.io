@@ -1,0 +1,3 @@
+app.component('headercomponent', {
+    template: ''
+})

@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Strait' rel='stylesheet'>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
 </head>
 
 <body>
@@ -18,19 +19,7 @@
                 <a href="https://www.linkedin.com/in/anton-maynard-24a246127/" target="blank"><img width="30" height="30" src="images/logos/LinkedIn.png"></a>
             </div>
         </section>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="dropdown">Accomplishments
-                    <div class="dropdown-content">
-                        <a href="PTW.html">Professional And Technical Writing</a>
-                        <a href="CS.html">Computer Science</a>
-                </li>
-
-            </ul>
-        </nav>
+        <navcomponent></navcomponent>
         <header>
             <h1>Welcome</h1>
         </header>
@@ -54,11 +43,15 @@
                     out to be one of the better decisions I've made. It's pushed by Professional life to heights that I would not have acheived myself and gave me life long lessons and Battle Buddies.
                 </p>
             </main>
-            <footer>
-                <p>Copyright &copy; 2021 Anton Maynard</p>
-            </footer>
+            <footerComponent></footerComponent>
         </section>
-    </section>
+
+        <script src="/scripts/app.js"></script>
+        <script src="/scripts/components/footerComponent.js"></script>
+        <script src="scripts/components/navComponent.js"></script>
+        <script>
+            const mountedApp = app.mount('#app')
+        </script>
 </body>
 
 </html>

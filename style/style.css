@@ -1,7 +1,5 @@
-/* General styles */
-
 html {
-    color: #eee;
+    color: #fff;
     font-size: 15px;
     background-image: url(../images/background.jpg);
 }
@@ -10,10 +8,6 @@ header,
 main,
 footer {
     display: block;
-}
-
-body {
-    margin: 0;
 }
 
 
@@ -109,7 +103,7 @@ main h3 {
     font-style: italic;
 }
 
-.port {
+.portrait {
     width: 200px;
     display: inline-block;
     margin-top: 8px;
@@ -119,14 +113,19 @@ main h3 {
     margin: 5px;
 }
 
-#container,
-footer p {
+footer {
     text-align: center;
+    font-size: 1em;
 }
 
-footer {
-    margin: 2em;
-    padding-bottom: 5em;
+footer a {
+    text-decoration: none;
+    padding: 1em;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -154,8 +153,7 @@ nav li {
     width: 20%;
 }
 
-nav a,
-footer a {
+nav a {
     text-decoration: none;
     font-size: 2em;
     padding: 1em;
@@ -214,26 +212,6 @@ dt {
 
 main h2 {
     font-family: 'Times New Roman'
-}
-
-#ironcross {
-    background-image: url(../images/ironcross.png);
-    width: 179px;
-    height: 281px;
-    float: right;
-}
-
-.desktop {
-    display: inline;
-}
-
-.show {
-    display: block;
-}
-
-.mobile,
-.hidden {
-    display: none;
 }
 
 
