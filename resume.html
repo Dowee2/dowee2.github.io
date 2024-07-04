@@ -15,74 +15,53 @@
         <h1>Anton Maynard</h1>
     </section>
     <section id="app">
-        <section id="socials">
-            <div class="sm_icon">
-                <a href="https://www.linkedin.com/in/anton-maynard-24a246127/" target="blank"><img width="30" height="30" src="images/logos/LinkedIn.png"></a>
-            </div>
-        </section>
-        <navcomponent></navcomponent>
+        <headercomponent></headercomponent>
         <header>
             <h1>Resume</h1>
         </header>
         <main>
-            <h2>CERTIFICATIONS</h2>
-            <ul>
-                <li>Cisco Certified Network Associate (CCNA) </li>
-            </ul>
-
-            <h2>EDUCATION</h2>
-            <ul>
-                <li>
-                    <p>
-                        University of West Georgia Carrollton, GA Computer Science - Computer Science Candidate (Expected graduation Dec 2023)
-                    </p>
-                </li>
-            </ul>
-
-            <h2>WORK EXPERIENCE</h2>
-            <h3>
-                Southwire LLC, Carrollton, GA <br> I.T Professional, Jun 2021- Present
-            </h3>
-            <ul>
-                <li>Answer user inquiries regarding computer software or hardware operation to resolve problems.</li>
-                <li>Generate incident tickets and provide support and follow up to users.</li>
-                <li>Educate users on common software/hardware issue to allow for self-troubleshooting.</li>
-                <li>Install, configure and troubleshoot user endpoints and workstations.</li>
-                <li>Map company networks and network issues using parsing software.</li>
-            </ul>
-
-            <h3>
-                US ARMY RESERVE, Atlanta, GA <br> Information Technology Specialist, Oct 2018 – Present
-            </h3>
-            <ul>
-                <li>Configure security settings or access permissions for groups or individuals.</li>
-                <li>Communicate, document and debrief network support activities and issues.</li>
-                <li>Identify the causes of networking problems, using diagnostic testing software and equipment.</li>
-                <li>Perform routine maintenance or standard repairs to networking components or equipment.</li>
-                <li>Provide telephone support related to networking or connectivity issues.</li>
-                <li>Train others in procedures related to network applications software or related systems.</li>
-                <li>Configure wide area network (WAN) or local area network (LAN) routers or related equipment whilst in a team environment or solo.</li>
-                <li>Collaborate with foreign entities to perform and execute combat network installation procedures.</li>
-            </ul>
-
-            <h3>
-                TANNER HEALTH SYSTEM, Carrollton, GA <br> Service Desk Analyst, November 2019 – December 2019
-            </h3>
-            <ul>
-                <li>Answer user inquiries regarding computer software or hardware operation to resolve problems.</li>
-                <li>Generate incident tickets and provide support and follow up to users.</li>
-            </ul>
-
-            <h3>
-                KROGER CO, Atlanta, GA <br> Meat and Seafood Clerk, Aug 2016 – Jan 2019
-            </h3>
-            <ul>
-                <li>Prepare and place meat cuts and products in display counter, so they will appear attractive and catch the shopper's eye.</li>
-                <li>Receive, inspect, and store product upon delivery, to ensure product quality.</li>
-                <li>Estimate requirements and order of requisition product supplies to maintain inventories.</li>
-                <li>Supervise other butchers or meat cutters.</li>
-                <li>Interact with customers and recommend meal ideas to utilize products in.</li>
-            </ul>
+            <div class="container">
+                <div class="section">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-content">
+                        <h3>Southwire LLC, Carrollton, GA</h3>
+                        <p>I.T Professional, Jun 2021- Present</p>
+                        <ul>
+                            <li>Resolve user inquiries regarding software and hardware operations and problems.</li>
+                            <li>Generate and manage incident tickets, whilst providing support and follow-up.</li>
+                            <li>Educate users on common issues to facilitate self-troubleshooting.</li>
+                            <li>Train new and current employees on software use, troubleshooting steps, and company processes.</li>
+                            <li>Map company LANs and diagnose network issues using SolarWinds, Netmiko, and DHCP.</li>
+                            <li>Develop and test Python and PowerShell scripts for workflow automation.</li>
+                            <li>Conducted network migrations using Netmiko, Meraki API, and PyATS to map Cisco Access Points to switch ports, standardize switch port configurations, and migrate Access Points to Google Cloud WLC.</li>
+                        </ul>
+                        <h3>US ARMY RESERVE, Atlanta, GA</h3>
+                        <p>Information Technology Specialist, Oct 2018 – Present</p>
+                        <ul>
+                            <li>Configure security settings or access permissions for groups or individuals.</li>
+                            <li>Communicate, document, and debrief network support activities and issues.</li>
+                            <li>Identify the causes of networking problems, using diagnostic testing software and equipment.</li>
+                            <li>Deploy, configure, and manage virtual machines and servers including but not limited to Palo Alto Firewalls, Riverbed, Cisco Call Manager.</li>
+                            <li>Perform routine maintenance and standard repairs to networking components and equipment.</li>
+                            <li>Train a team of new network engineers in proper procedures on network setup, as well as network troubleshooting.</li>
+                            <li>Configure wide area network (WAN) and local area network (LAN) routers and related equipment whilst in a team or solo environment.</li>
+                            <li>Collaborate with foreign entities to perform and execute combat network installation procedures.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-content">
+                        <p><strong>Bachelor of Science - Computer Science</strong><br>University of West Georgia, Carrollton Ga</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-content">
+                        <p>Cisco Certified Network Associate (CCNA) – May 2027</p>
+                    </div>
+                </div>
+            </div>
 
         </main>
         <footerComponent></footerComponent>
@@ -91,6 +70,7 @@
     <script src="/scripts/app.js"></script>
     <script src="/scripts/components/footerComponent.js"></script>
     <script src="scripts/components/navComponent.js"></script>
+    <script src="scripts/components/headerComponent.js"></script>
     <script>
         const mountedApp = app.mount('#app')
     </script>
